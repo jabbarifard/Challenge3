@@ -1,7 +1,6 @@
 package com.example.challenge3;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,16 +9,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.challenge3.databinding.ActivityMainBinding;
+import com.example.challenge3.databinding.ActivityNewGameBinding;
 import java.util.Random;
 
 public class NewGame extends AppCompatActivity {
 
     AlertDialog.Builder builder;
-    Button customSecretBtn;
-    Button randomSecretBtn;
+    private ActivityNewGameBinding binding;
     TextView secretText;
     String secretNumber;
 
@@ -27,25 +26,31 @@ public class NewGame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_game);
+        binding = ActivityNewGameBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
     }
 
     public void customSecretOnClick(View view) {
-        customSecretBtn = (Button) findViewById(R.id.customSecretBtn);
-        secretText = (TextView) findViewById(R.id.secretText);
+        secretText = binding.secretText;
         secretNumber = secretText.getText().toString();
         String regex = "[0-9]+";
 
         if(secretNumber.length() == 0){
             alertView("Enter a 4 digits number!");
+            secretText.setText("");
 
         } else if (!secretNumber.matches(regex)){
             alertView("The input contains non-digit letters!");
+            secretText.setText("");
 
         } else if(secretNumber.length() != 4) {
             alertView("Your number must be 4 digits!");
+            secretText.setText("");
 
         } else if( !hasDistinctDigits(Integer.valueOf(secretNumber))){
             alertView("Enter a 4 digits number with distinct digits!");
+            secretText.setText("");
 
         } else {
             Intent intent = new Intent(this, MainActivity.class);
@@ -54,18 +59,16 @@ public class NewGame extends AppCompatActivity {
         }
 
         hideKeyboard();
-        //secretText.setText("");
     }
 
     public void randomSecretOnClick(View view){
-        randomSecretBtn = (Button) findViewById(R.id.randomSecretBtn);
         int random = 1111;
         while (!hasDistinctDigits(random)) {
-            Random r = new Random();
-            random = (int) 1000 + r.nextInt(9999);
+            random = 1000 + new Random().nextInt(9000);//9999
             secretNumber = String.valueOf(random);
-            Log.v("Random Number:", secretNumber);
+            Log.v("Random Number", secretNumber);
         }
+
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("extra_secretNumber", secretNumber);
         startActivity(intent);

@@ -31,7 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7d1cdf8-bf3b-4328-bd5e-81eb19a30d68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/challenge3/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_viewbinding_4_1_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -43,15 +43,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/challenge3.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/challenge3.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/challenge3/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/challenge3/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/challenge3/NewGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/challenge3/NewGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_game.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_game.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +91,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -201,26 +199,26 @@
     </state>
     <state x="414" y="150" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606147831048" />
     <state x="466" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.811@0.23.1440.811" timestamp="1604592643597" />
-    <state width="1358" height="186" key="GridCell.Tab.0.bottom" timestamp="1606279442306">
+    <state width="1358" height="247" key="GridCell.Tab.0.bottom" timestamp="1606281920272">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1220" height="102" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606152304267" />
-    <state width="1358" height="186" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1606279442306" />
-    <state width="1358" height="186" key="GridCell.Tab.0.center" timestamp="1606279442305">
+    <state width="1358" height="247" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1606281920272" />
+    <state width="1358" height="247" key="GridCell.Tab.0.center" timestamp="1606281920272">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1220" height="102" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606152304267" />
-    <state width="1358" height="186" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1606279442305" />
-    <state width="1358" height="186" key="GridCell.Tab.0.left" timestamp="1606279442305">
+    <state width="1358" height="247" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1606281920272" />
+    <state width="1358" height="247" key="GridCell.Tab.0.left" timestamp="1606281920271">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1220" height="102" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606152304267" />
-    <state width="1358" height="186" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1606279442305" />
-    <state width="1358" height="186" key="GridCell.Tab.0.right" timestamp="1606279442306">
+    <state width="1358" height="247" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1606281920271" />
+    <state width="1358" height="247" key="GridCell.Tab.0.right" timestamp="1606281920272">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1220" height="102" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606152304267" />
-    <state width="1358" height="186" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1606279442306" />
+    <state width="1358" height="247" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1606281920272" />
     <state x="418" y="38" width="615" height="735" key="find.popup" timestamp="1606264105730">
       <screen x="0" y="23" width="1440" height="812" />
     </state>

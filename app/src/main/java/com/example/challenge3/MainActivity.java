@@ -1,71 +1,51 @@
 package com.example.challenge3;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
-//import com.example.challenge3.databinding.ActivityMainBinding;
-//import com.raywenderlich.android.gobuy.databinding.ActivityGroceryListBinding;
-
+import com.example.challenge3.databinding.ActivityMainBinding;
 
 
 public class MainActivity extends AppCompatActivity {
     Game game;
     AlertDialog.Builder builder;
-    //private ActivityMainBinding binding;
-    // private lateinit var binding: ActivityMainBinding;
-    TableLayout tableLayout;
+    private ActivityMainBinding binding;
     TextView guess;
-    Button guessBtn;
-    Button newGameBtn;
 
     int attempt = 0;
     String attemptStr;
     String secretStr;
     String result;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-//        binding = ActivityMainBinding.inflate(layoutInflater);
-//        setContentView(binding.root);root
-//        binding = ActivityMainBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-        //ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        //ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater(), container, attachToContainer);
-// get the root view
-        //View view = binding.getRoot();
-        tableLayout = (TableLayout) findViewById(R.id.guessTbl);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
         secretStr = getIntent().getStringExtra("extra_secretNumber");
         game = new Game(secretStr);
     }
 
     public void newGameOnClick(View view) {
-        newGameBtn = (Button) findViewById(R.id.newGameBtn);
         Intent intent = new Intent(this, NewGame.class);
         startActivity(intent);
     }
 
     public void guessBtnClick(View view){
         //String secret = "1234";
-        //String secret = secretStr;
-        guessBtn = (Button) findViewById(R.id.guessBtn);
-        guess = (TextView) findViewById(R.id.guessText);
+        guess = binding.guessText;
         String guessStr = guess.getText().toString();
         String regex = "[0-9]+";
 
@@ -91,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
 
             guess.setText("");
             hideKeyboard();
-
     }
 
     private void alertView(String message) {
@@ -121,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         result = game.spCalculation(guessStr);
         if (result.compareTo("4S0P") == 0) {
             alertView("Congratulation!");
+            result = "You Win!";
         }
 
         /* create a table row */
@@ -157,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
         tableRow.addView(tv3);
 
         /* add the row to the table */
-        tableLayout.addView(tableRow);
+        binding.guessTbl.addView(tableRow);
 
 
 
